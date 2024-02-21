@@ -1,3 +1,23 @@
+
+<script setup>
+import {computed} from 'vue';
+
+const props = defineProps({
+  modelValue: Boolean,
+  links: Object
+})
+
+const emit = defineEmits(['update:modelValue'])
+
+const internalModel = computed({
+  set: (val) => {
+    emit('update:modelValue', val)
+  },
+  get: () => props.modelValue
+});
+
+</script>
+
 <template>
   <Transition name="nested">
     <div
@@ -24,24 +44,6 @@
   </Transition>
 </template>
 
-<script setup>
-import {computed, defineProps, defineEmits} from 'vue';
-
-const props = defineProps({
-  modelValue: Boolean,
-  links: Object
-})
-
-const emit = defineEmits(['update:modelValue'])
-
-const internalModel = computed({
-  set: (val) => {
-    emit('update:modelValue', val)
-  },
-  get: () => props.modelValue
-});
-
-</script>
 
 <style scoped>
 

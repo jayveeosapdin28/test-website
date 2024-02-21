@@ -7,9 +7,7 @@ import Botnav from "~/components/navigators/botnav.vue";
 <template>
 <div>
   <topnav/>
-  <div class="container mx-auto">
-    <slot/>
-  </div>
+  <slot/>
   <botnav/>
 </div>
 </template>

@@ -19,7 +19,7 @@ export default {
         secondary: 'rgb(128,128,128)',
         accent: {
           DEFAULT: 'rgb(125,194,202)',
-          secondary: 'rgb(122,189,195)',
+          secondary: 'rgb(137,199,205)',
           tertiary: 'rgb(229,242,245)',
         },
         gray: 'rgb(232,240,241)',
@@ -27,6 +27,17 @@ export default {
       },
       fontFamily:{
         primary: 'Poppins'
+      },
+      fontWeight: {
+        '100': 100,
+        '200': 200,
+        '300': 300,
+        '400': 400,
+        '500': 500,
+        '600': 600,
+        '700': 700,
+        '800': 800,
+        '900': 900,
       }
     },
   },
