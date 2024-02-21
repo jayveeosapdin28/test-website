@@ -5,26 +5,26 @@ import Dropdown from "~/components/navigators/partials/dropdown.vue";
 const showingNavigationDropdown = ref(false);
 
 const links = [
-  {label: 'Features', to: '/'},
-  {label: 'Testimonial', to: '/'},
-  {label: 'Pricing', to: '/'},
+  {label: 'Features', to: '#features'},
+  {label: 'Testimonial', to: '#testimonial'},
+  {label: 'Pricing', to: '#pricing'},
 ]
 </script>
 
 <template>
   <nav>
-    <div class="flex container gap-4 mx-auto p-4 justify-between">
+    <div class="flex container gap-x-6 mx-auto p-4 justify-between py-10">
       <div class="flex-grow flex items-center gap-8">
         <!--logo-->
-        <img class="h-10" src="../../assets/images/image.svg">
+        <img class="h-10" src="/assets/img/image.svg">
         <!--links-->
-        <div class="hidden flex-grow xl:flex justify-between items-center">
-          <ul class="flex gap-4">
+        <div class="hidden flex-grow lg:flex justify-between items-center">
+          <ul class="flex  gap-x-6">
             <li v-for="link in links" :key="`${link.label}-link`">
               <NuxtLink :to="link.to">{{link.label}}</NuxtLink>
             </li>
           </ul>
-          <ul class="flex gap-4 items-center">
+          <ul class="flex gap-x-6 items-center">
             <li>
               <NuxtLink to="/login">Login</NuxtLink>
             </li>
@@ -33,10 +33,10 @@ const links = [
       </div>
       <div class=" flex items-center gap-4">
         <!--try button-->
-        <button class="btn bg-neutral-800 text-white px-3 py-1">Try for free</button>
+        <NuxtLink to="/" class="btn btn-dark">Try for free</NuxtLink>
         <!--hamburger-->
 
-        <div class="xl:hidden">
+        <div class="lg:hidden">
           <button
               @click="showingNavigationDropdown = !showingNavigationDropdown"
               class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out"

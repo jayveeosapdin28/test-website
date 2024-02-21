@@ -5,7 +5,7 @@
         v-if="internalModel"
         @click="internalModel = false"
     >
-      <div class="w-full p-8  relative top-8 inner">
+      <div class="w-full p-8  relative top-14 inner">
         <div class="bg-white rounded-xl shadow-lg p-6">
          <ul class="flex flex-col gap-4">
            <li v-for="link in links" :key="`${link.label}-link`">

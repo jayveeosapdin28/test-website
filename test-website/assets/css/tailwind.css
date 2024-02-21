@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body{
-    @apply text-secondary font-primary text-[17px]  leading-8;
+    @apply text-secondary font-primary text-[16px]  leading-8;
 }
 
 h1,h2,h3,h4,h5,h6{
@@ -32,6 +32,10 @@ h1,h2,h3,h4,h5,h6{
 
 .btn-sm{
     @apply h-12 px-10;
+}
+
+.btn-dark{
+    @apply bg-neutral-800 text-white px-3 py-1;
 }
 
 .btn-lg{
