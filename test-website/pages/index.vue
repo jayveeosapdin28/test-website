@@ -5,6 +5,7 @@ import PrimaryFeature from "~/components/sections/feature/primaryFeature.vue";
 import SecondaryFeature from "~/components/sections/feature/secondaryFeature.vue";
 import Cta from "~/components/sections/cta/cta.vue";
 import Testimonial from "~/components/sections/testimonial/testimonial.vue";
+import Pricing from "~/components/sections/pricing/pricing.vue";
 </script>
 
 <template>
@@ -21,6 +22,9 @@ import Testimonial from "~/components/sections/testimonial/testimonial.vue";
 
   <!--testimonial-->
   <Testimonial/>
+
+  <!--pricing-->
+  <Pricing/>
 
 </template>
 
