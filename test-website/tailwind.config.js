@@ -14,7 +14,7 @@ export default {
       xl: '1330px',
     },
     extend: {
-      color: {
+      colors: {
         primary: 'rgb(36,42,43)',
         secondary: 'rgb(128,128,128)',
         accent: {
@@ -22,7 +22,8 @@ export default {
           secondary: 'rgb(122,189,195)',
           tertiary: 'rgb(229,242,245)',
         },
-        grey: 'rgb(232,240,241)',
+        gray: 'rgb(232,240,241)',
+        dark: '#1F2937',
       },
       fontFamily:{
         primary: 'Poppins'
@@ -31,4 +32,3 @@ export default {
   },
   plugins: [],
 }
-
