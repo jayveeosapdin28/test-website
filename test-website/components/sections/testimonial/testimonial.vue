@@ -1,0 +1,90 @@
+<script setup lang="ts">
+const testimonials = [
+  {
+    author: 'HeadFirst Group',
+    role: 'Staffing',
+    content: 'HireData stands out in terms of user-friendliness, reporting, integrations, and industry knowledge. We\'re excited about the insights and improvements this partnership brings.',
+    logo: 'logo_headfirst'
+  },
+  {
+    author: 'Rijksoverheid',
+    role: 'Recruitment',
+    content: 'HireData\'s insightful surveys and in-depth reports, complete with benchmarking, are instrumental in our daily advancements. Their tools not only enlighten us with data but also guide our continual growth and success.',
+    logo: 'logo_rijksoverheid'
+  },
+  {
+    author: 'EN HR Solutions',
+    role: 'Recruitment',
+    content: 'HireData offers a true partnership. With them, measuring Net Promoter Score (NPS) and managing the employer brand for our RPO customers has become an effortless, automated process.',
+    logo: 'logo_enhrsolutions'
+  },
+  {
+    author: 'Circle8 Total Talent Flow\n',
+    role: 'Staffing',
+    content: 'Partnership with HireData led to valuable insights in needs and wishes of professionals, customers and suppliers, and a drastically improved NPS.',
+    logo: 'logo_circle8'
+  },
+  {
+    author: 'Mediahuis',
+    role: 'Recruitment',
+    content: 'With HireData, a significant portion of our recruitment process is seamlessly automated, particularly the collection of exit feedback. This has transformed how we gather and analyze crucial data, enabling us to continuously improve.',
+    logo: 'logo_mediahuis'
+  },
+  {
+    author: 'Profield',
+    role: 'Staffing',
+    content: 'HireData\'s automation and multi-channel communication platform helps make us more efficient. But it\'s not just about efficiency; it\'s about transforming how we connect with candidates and streamline our operations.',
+    logo: 'logo_profield'
+  },
+
+]
+</script>
+
+<template>
+  <section class="section">
+    <div class="container mx-auto">
+      <div class="text-center max-w-3xl mx-auto">
+        <h2 class="h2 text-center mb-12">
+          Chosen by top recruitment experts
+        </h2>
+        <p class="text-lg">
+          Our software is chosen by industry visionaries for its perfect blend of intuitive simplicity and robust
+          features. We're committed to ensuring you're always at the forefront of recruitment excellence.
+        </p>
+      </div>
+      <div class="p-4 mt-6">
+        <ul class="grid gap-6 lg:grid-cols-3">
+          <template v-for="(testimonial,index) in testimonials" :key="`testimonial-${index}`">
+            <li>
+              <div class="relative rounded-2xl bg-white p-6 shadow-xl shadow-slate-900/10">
+                <svg aria-hidden="true"  width="105" height="78" class="absolute left-6 top-6 accent-color">
+                  <path
+                      class="text-blue-400"
+                      d="M25.086 77.292c-4.821 0-9.115-1.205-12.882-3.616-3.767-2.561-6.78-6.102-9.04-10.622C1.054 58.534 0 53.411 0 47.686c0-5.273.904-10.396 2.712-15.368 1.959-4.972 4.746-9.567 8.362-13.786a59.042 59.042 0 0 1 12.43-11.3C28.325 3.917 33.599 1.507 39.324 0l11.074 13.786c-6.479 2.561-11.677 5.951-15.594 10.17-3.767 4.219-5.65 7.835-5.65 10.848 0 1.356.377 2.863 1.13 4.52.904 1.507 2.637 3.089 5.198 4.746 3.767 2.41 6.328 4.972 7.684 7.684 1.507 2.561 2.26 5.5 2.26 8.814 0 5.123-1.959 9.19-5.876 12.204-3.767 3.013-8.588 4.52-14.464 4.52Zm54.24 0c-4.821 0-9.115-1.205-12.882-3.616-3.767-2.561-6.78-6.102-9.04-10.622-2.11-4.52-3.164-9.643-3.164-15.368 0-5.273.904-10.396 2.712-15.368 1.959-4.972 4.746-9.567 8.362-13.786a59.042 59.042 0 0 1 12.43-11.3C82.565 3.917 87.839 1.507 93.564 0l11.074 13.786c-6.479 2.561-11.677 5.951-15.594 10.17-3.767 4.219-5.65 7.835-5.65 10.848 0 1.356.377 2.863 1.13 4.52.904 1.507 2.637 3.089 5.198 4.746 3.767 2.41 6.328 4.972 7.684 7.684 1.507 2.561 2.26 5.5 2.26 8.814 0 5.123-1.959 9.19-5.876 12.204-3.767 3.013-8.588 4.52-14.464 4.52Z"></path>
+                </svg>
+                <blockquote class="relative">
+                  <p class="">
+                    {{testimonial.content}}
+                  </p>
+                </blockquote>
+                <hr class="text-primary/10 my-4">
+                <div class="flex justify-between items-center">
+                  <div class="flex flex-col">
+                    <p class="font-semibold">{{testimonial.author}}</p>
+                    <p class="font-light">{{testimonial.role}}</p>
+                  </div>
+                  <img :src="`/_nuxt/assets/img/testimonials/${testimonial.logo}.png`" :alt="testimonial.logo" class="w-14 h-14">
+                </div>
+              </div>
+            </li>
+          </template>
+        </ul>
+      </div>
+    </div>
+
+  </section>
+</template>
+
+<style scoped>
+
+</style>

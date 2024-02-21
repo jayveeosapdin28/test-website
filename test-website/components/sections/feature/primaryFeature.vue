@@ -4,7 +4,7 @@ import FeatureTab from "~/components/sections/feature/partials/featureTab.vue";
 </script>
 
 <template>
-  <section class="section bg-accent ">
+  <section class="section bg-accent overflow-hidden">
     <div class="container mx-auto">
       <div class="text-center text-white">
         <h2 class="h2 text-center text-white">Empower your recruitment with HireData</h2>

@@ -4,6 +4,7 @@ import Hero from "~/components/sections/hero/hero.vue";
 import PrimaryFeature from "~/components/sections/feature/primaryFeature.vue";
 import SecondaryFeature from "~/components/sections/feature/secondaryFeature.vue";
 import Cta from "~/components/sections/cta/cta.vue";
+import Testimonial from "~/components/sections/testimonial/testimonial.vue";
 </script>
 
 <template>
@@ -17,6 +18,9 @@ import Cta from "~/components/sections/cta/cta.vue";
 
   <!--cta-->
   <Cta/>
+
+  <!--testimonial-->
+  <Testimonial/>
 
 </template>
 

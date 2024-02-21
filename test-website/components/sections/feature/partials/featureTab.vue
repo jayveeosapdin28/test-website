@@ -29,7 +29,7 @@ const active_tab = ref(0)
 
 <template>
   <div class="grid grid-cols-12">
-    <div class="col-span-12 lg:col-span-5 py-14">
+    <div class="col-span-12 lg:col-span-5 lg:py-14 py-4">
       <ul class="flex gap-x-4 lg:flex-col scroll overflow-x-auto lg:overflow-hidden">
         <template v-for="(tab,index) in tabs" :key="`feature-tab-${index}`">
           <li >
@@ -38,13 +38,13 @@ const active_tab = ref(0)
         </template>
       </ul>
     </div>
-    <div class="col-span-12 lg:col-span-7 h-[37rem]  relative">
+    <div class="col-span-12 lg:col-span-7 h-[37rem]  relative ">
       <template v-for="(tab,index) in tabs" :key="`feature-img-tab-${index}`">
         <div v-if="index === active_tab"  class="lg:hidden">
           <p class="text-white leading-6  lg:hidden">{{ tab.description }}</p>
         </div>
-        <div v-if="index === active_tab" class="w-[45rem] lg:w-[69rem] mt-24 lg:mt-0 rounded-xl shadow-lg absolute left-0 top-0 overflow-hidden">
-          <img :src="`/_nuxt/assets/img/features/${tab.img}.png`" class="w-full h-full object-contain">
+        <div v-if="index === active_tab" class="w-[45rem] lg:w-[69rem] mt-24 lg:mt-0 rounded-xl shadow-lg absolute left-0 lg:top-0 top-8 overflow-hidden">
+          <img :src="`/_nuxt/assets/img/features/${tab.img}.png`" :alt="tab.img" class="w-full h-full object-contain">
         </div>
       </template>
     </div>
