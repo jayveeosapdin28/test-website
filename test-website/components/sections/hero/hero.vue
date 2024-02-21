@@ -1,5 +1,13 @@
 <script setup lang="ts">
 
+const logoNames = [
+  'bullhorn_logo',
+  'carerix_logo',
+  'jobadder_logo',
+  'otys_logo',
+  'salesforce_logo',
+  'vincere_logo',
+];
 
 </script>
 
@@ -14,10 +22,10 @@
           communication channel(s) in seconds. And automate the boring stuff that keep your recruiters busy all day.</p>
         <ul class="flex items-center mt-10 gap-x-6">
           <li>
-            <NuxtLink>Login</NuxtLink>
+            <NuxtLink to="https://app.hiredata.com/login">Login</NuxtLink>
           </li>
           <li>
-            <NuxtLink class="btn btn-dark">Try for free</NuxtLink>
+            <NuxtLink to="https://hiredata.com/register" class="btn btn-dark">Try for free</NuxtLink>
           </li>
         </ul>
       </div>
@@ -28,25 +36,11 @@
       </p>
       <ul
           class="mt-8 grid grid-cols-2 lg:grid-cols-6 gap-8 ">
-        <li class="flex justify-center">
-          <img src="~/assets/img/bullhorn_logo.svg">
-        </li>
-        <li class="flex justify-center">
-          <img src="~/assets/img/carerix_logo.svg">
-        </li>
-        <li class="flex justify-center">
-          <img src="~/assets/img/jobadder_logo.svg">
-        </li>
-        <li class="flex justify-center">
-          <img src="~/assets/img/otys_logo.svg">
-        </li>
-        <li class="flex justify-center">
-          <img src="~/assets/img/salesforce_logo.svg">
-        </li>
-        <li class="flex justify-center">
-          <img src="~/assets/img/vincere_logo.svg">
-        </li>
-
+       <template v-for="logo in logoNames">
+         <li class="flex justify-center">
+           <img :src="`/_nuxt/assets/img/${logo}.svg`">
+         </li>
+       </template>
       </ul>
 
     </div>

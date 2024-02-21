@@ -34,29 +34,14 @@ h1,h2,h3,h4,h5,h6{
     @apply rounded-full tracking-[1.02px] flex justify-center items-center;
 }
 
-.btn-sm{
-    @apply h-12 px-10;
-}
-
-.btn-dark{
-    @apply bg-neutral-800 text-white px-3 py-1;
-}
-
-.btn-lg{
-    @apply h-16 px-[50px];
-}
-
-.btn-accent{
-    @apply bg-accent text-white hover:bg-accent-secondary;
-}
 
 .btn-white{
-    @apply bg-white text-accent hover:bg-white/90;
+    @apply bg-white text-accent hover:bg-white/90 px-3 py-1;
+}
+.btn-dark{
+    @apply bg-neutral-800 hover:bg-neutral-50/90 text-white px-3 py-1;
 }
 
-.btn-outline{
-    @apply bg-transparent border-2 border-accent text-secondary hover:bg-accent hover:border-transparent hover:text-white;
-}
 
 .section{
     @apply py-12 xl:py-[150px]

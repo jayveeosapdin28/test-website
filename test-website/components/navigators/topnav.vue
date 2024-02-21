@@ -26,14 +26,14 @@ const links = [
           </ul>
           <ul class="flex gap-x-6 items-center">
             <li>
-              <NuxtLink to="/login">Login</NuxtLink>
+              <NuxtLink to="https://app.hiredata.com/login">Login</NuxtLink>
             </li>
           </ul>
         </div>
       </div>
       <div class=" flex items-center gap-4">
         <!--try button-->
-        <NuxtLink to="/" class="btn btn-dark">Try for free</NuxtLink>
+        <NuxtLink to="https://hiredata.com/register" class="btn btn-dark">Try for free</NuxtLink>
         <!--hamburger-->
 
         <div class="lg:hidden">

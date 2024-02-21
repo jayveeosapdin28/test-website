@@ -2,6 +2,8 @@
 
 import Hero from "~/components/sections/hero/hero.vue";
 import PrimaryFeature from "~/components/sections/feature/primaryFeature.vue";
+import SecondaryFeature from "~/components/sections/feature/secondaryFeature.vue";
+import Cta from "~/components/sections/cta/cta.vue";
 </script>
 
 <template>
@@ -10,9 +12,12 @@ import PrimaryFeature from "~/components/sections/feature/primaryFeature.vue";
     <Hero/>
   </div>
   <!--feature-->
-  <div>
-    <PrimaryFeature/>
-  </div>
+  <PrimaryFeature/>
+  <SecondaryFeature/>
+
+  <!--cta-->
+  <Cta/>
+
 </template>
 
 <style scoped>
