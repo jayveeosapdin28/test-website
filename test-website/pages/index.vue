@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <div class="bg-blue-500">ss</div>
+  <div class="text-xl">SSSSS</div>
 </template>
 
 <style scoped>
