@@ -6,7 +6,7 @@ defineProps({
 </script>
 
 <template>
-  <footer>
+  <footer class="mt-24">
     <div class="flex justify-center">
       <div>
         <!--logo-->
