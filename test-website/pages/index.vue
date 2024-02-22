@@ -6,6 +6,7 @@ import SecondaryFeature from "~/components/sections/feature/secondaryFeature.vue
 import Cta from "~/components/sections/cta/cta.vue";
 import Testimonial from "~/components/sections/testimonial/testimonial.vue";
 import Pricing from "~/components/sections/pricing/pricing.vue";
+import Faq from "~/components/sections/faq/faq.vue";
 </script>
 
 <template>
@@ -16,15 +17,14 @@ import Pricing from "~/components/sections/pricing/pricing.vue";
   <!--feature-->
   <PrimaryFeature/>
   <SecondaryFeature/>
-
   <!--cta-->
   <Cta/>
-
   <!--testimonial-->
   <Testimonial/>
-
   <!--pricing-->
   <Pricing/>
+  <!--faq-->
+  <Faq/>
 
 </template>
 

@@ -50,3 +50,7 @@ h1,h2,h3,h4,h5,h6{
 .accent-color{
     fill: rgba(125,194,202,.2);
 }
+
+a{
+    @apply text-accent underline
+}
