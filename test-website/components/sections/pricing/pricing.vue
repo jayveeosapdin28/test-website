@@ -3,7 +3,7 @@ const { data } = await useFetch('/api/pricing')
 </script>
 
 <template>
-  <section class="section bg-gradient-to-b px-12 from-[#0E142F] to-[#0E142F]/90 overflow-hidden">
+  <section id="pricing" class="section bg-gradient-to-b px-12 from-[#0E142F] to-[#0E142F]/90 overflow-hidden">
     <div class="max-w-5xl mx-auto">
       <div class="text-center text-white">
         <h2 class="h2 text-center text-white">Maximizing value in every plan.</h2>

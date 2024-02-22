@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+    scroll-behavior: smooth;
+}
 body{
     @apply text-secondary font-primary text-[16px]  leading-8;
 }
@@ -44,13 +47,9 @@ h1,h2,h3,h4,h5,h6{
 
 
 .section{
-    @apply py-12 xl:py-[150px]
+    @apply py-8 xl:py-[150px]
 }
 
 .accent-color{
     fill: rgba(125,194,202,.2);
-}
-
-a{
-    @apply text-accent underline
 }

@@ -3,7 +3,7 @@ const { data } = await useFetch('/api/testimonials')
 </script>
 
 <template>
-  <section class="section">
+  <section id="testimonial" class="section">
     <div class="container mx-auto">
       <div class="text-center max-w-3xl mx-auto">
         <h2 class="h2 text-center mb-12">

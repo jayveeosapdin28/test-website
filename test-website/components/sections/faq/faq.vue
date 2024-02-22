@@ -23,4 +23,8 @@ const { data } = await useFetch('/api/faq')
 
 <style scoped>
 
+a{
+  @apply text-accent underline
+}
+
 </style>

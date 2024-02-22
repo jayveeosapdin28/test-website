@@ -7,6 +7,9 @@ import Cta from "~/components/sections/cta/cta.vue";
 import Testimonial from "~/components/sections/testimonial/testimonial.vue";
 import Pricing from "~/components/sections/pricing/pricing.vue";
 import Faq from "~/components/sections/faq/faq.vue";
+
+
+
 </script>
 
 <template>

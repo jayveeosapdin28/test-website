@@ -4,11 +4,10 @@ import Dropdown from "~/components/navigators/partials/dropdown.vue";
 
 const showingNavigationDropdown = ref(false);
 
-const links = [
-  {label: 'Features', to: '#features'},
-  {label: 'Testimonial', to: '#testimonial'},
-  {label: 'Pricing', to: '#pricing'},
-]
+defineProps({
+  links: Array,
+})
+
 </script>
 
 <template>
